@@ -24,7 +24,7 @@ body{
     margin-top: 5vw;
     margin-left: 3vh;
     white-space: nowrap;
-    padding: 0.67em 3.67em;
+    padding: 0.67em 3.67em 2.67em 3.67em;
 }
 .logo h1{
     text-align:center; 
