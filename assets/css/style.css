@@ -151,3 +151,9 @@ body{
         background-size: 160%;
     }
 }
+.vers{
+    width: 150px;
+    height: 50px;
+    background: red;
+    font-size: 40px;
+}
