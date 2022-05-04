@@ -29,8 +29,8 @@ body{
 
 
 .icon{
-    width: 100px;
-    height: 100px;
+    width: 8vw;
+    height: 8vw;
     filter: invert(1);
 }
 .icon img{
@@ -55,18 +55,12 @@ body{
 }
 @keyframes move {
     0% {
-        width: 100px;
-        height: 100px;
         transform: rotate(0deg);
     }
     10% {
-        width: 110px;
-        height: 110px;
-        transform: rotate(5deg);
+        transform: rotate(5deg) scale(1.3);
     }
     20%{
-        width: 100px;
-        height: 100px;
         transform: rotate(0deg);
     }
     100% {
@@ -101,13 +95,17 @@ body{
         background: rgba(3,3,3,0.5);
         background: linear-gradient(270deg, rgba(0,0,0,0.9) 80%, rgba(255,255,255,0) 100%);
         padding: 0 0 0 0;
-        padding-left: 50px;
+        padding-left: 30px;
         float: right;
         
         /* Направление, в котором блоки будут располагаться в строку */
         flex-direction: row;
         /* Направление, в котором блоки будут располагаться вертикально */
         flex-direction: column;
+    }
+    .icon{
+        width: 12vh;
+        height: 12vh;
     }
 
 }
