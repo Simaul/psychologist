@@ -61,7 +61,7 @@
     
     <!--Меню-->
     <div id="zone">
-        <div class="main btnb">
+        <div class="main btnb a">
             <div class="chto-to"></div>
             <div class="btnChto-to">
                 <button class="intro__btn" id="btn1">
@@ -89,6 +89,7 @@
         var par = document.getElementsByClassName('main');
         btns[0].onclick = function() {
             par[0].classList.remove("btnb");  //Удалить класс 
+            par[0].classList.remove("a");  //Удалить класс 
             par[0].classList.add("main--main-bg"); //Добавить класс
             par[0].classList.add("btna"); //Добавить класс
         }
@@ -96,6 +97,7 @@
             par[0].classList.remove("main--main-bg"); // Удалить класс
             par[0].classList.remove("btna"); // Удалить класс
             par[0].classList.add("btnb"); // Добавить класс
+            par[0].classList.add("a"); // Добавить класс
         }
         var btns = document.getElementsByClassName('intro__btn');
         var par = document.getElementsByClassName('main');
