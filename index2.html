@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+</head>
+    
+<body> 
+    <style>
+        .main {
+  color: red;
+}
+
+.main--main-bg {
+  background-color: green;
+}   
+
+
+    </style>
+    <p class="main">TEXT</p>
+    <button class="intro__btn">Добавить класс</button>
+    <button class="intro__btn">Удалить класс</button>
+    <script>
+        var btns = document.getElementsByClassName('intro__btn');
+        var par = document.getElementsByClassName('main');
+        btns[0].onclick = function() {
+          par[0].classList.add("main--main-bg");
+        }
+        btns[1].onclick = function() {
+            par[0].classList.remove("main--main-bg");
+        }   
+    </script>
+    
+
+</body>
