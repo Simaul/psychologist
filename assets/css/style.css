@@ -191,6 +191,9 @@ body{
     }
     .logo{ 
         height: 10vh;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        padding: 1.67em 3.67em 4.67em 3.67em;
     }
     .logo h1{
         font-size: 6vh;
@@ -278,8 +281,7 @@ body{
     }
     100% {
     }
-}
-    
+    }
     #btn2 img{
     transform: rotate(330deg);
     }
