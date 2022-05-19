@@ -6,7 +6,7 @@ body {
     background: #f6dbb6;
 }
 
-div{
+.container {
     width: 150px;
     height: 130px;
     border: 4px double black;
@@ -15,16 +15,19 @@ div{
     position: relative;
     float: left;
     text-align: center;
-    margin-top: 10px;
+    margin-bottom: 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     margin-left: 10px;
-    padding-top: 30px;
+    padding-top: 20px;
+    border-radius: 50%;
 }
-div:hover{
+.container:hover{
         border: 4px double green;
 }
-
-div:hover::after {
-
+.container:hover::after {
     position: absolute;
     content: attr(data-title); /* Выводим текст */
     left: 1px; top: -20px; /* Положение подсказки */
@@ -34,4 +37,46 @@ div:hover::after {
     font-size: 20px; /* Размер текста подсказки */
     padding: 5px 10px; /* Поля */
     border: 1px solid #333; /* Параметры рамки */
-   }
+    border-radius: 10px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    bottom: 9px;
+    right: 8px;
+    z-index: 2;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    bottom: 9px;
+    right: 8px;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+}
+.tell {
+    position: absolute;
+    bottom: 9px;
+    left: 8px;
+    height: 20px;
+    width: 21px;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 5px 0px 0px 4px;
+    background: rgba(227, 90, 219, 0.9);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: green;
+}
