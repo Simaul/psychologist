@@ -9,7 +9,7 @@ body {
 .container {
     width: 150px;
     height: 130px;
-    border: 4px double black;
+    border: 4px double #0d0505;
     font-size: 100px;
     font-weight: 700;
     position: relative;
@@ -72,8 +72,8 @@ body {
     border-radius: 50%;
     font-size: 17px;
     padding: 5px 0px 0px 4px;
-    background: rgba(227, 90, 219, 0.9);
-    color: rgb(0, 0, 0);
+    background: rgba(65, 151, 42, 0.9);
+    color: rgb(57, 50, 10);
     cursor: pointer;
 }
 /* When the checkbox is checked, add a blue background */

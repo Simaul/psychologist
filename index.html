@@ -8,10 +8,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>  
-   
     <div class="container" data-title="ани (а) ">
         ა
-        <input class="check" type="checkbox">
+        <input class="check" type="checkbox" value="1"/>
         <span class="checkmark"></span>
         <div class="tell" onclick="ani()">
             ▶
@@ -19,7 +18,7 @@
     </div>
     <div class="container" data-title="бани (б) ">
         ბ
-        <input class="check" type="checkbox">
+        <input class="check" type="checkbox" value="1"/>
         <span class="checkmark"></span>
         <div class="tell" id="bani" onclick="bani()">
              ▶
@@ -265,15 +264,15 @@
              ▶
         </div>
     </div>
-    <div class="container" data-title="hаэ (х) ">
+    <div class="container" data-title="hаэ (х) " >
         ჰ
         <input class="check" type="checkbox">
         <span class="checkmark"></span>
-        <div class="tell" id="hae" onclick="hae()">
+        <div class="tell" id="hae">
              ▶
         </div>
     </div>
-    <script>
+    <script>      
         function ani(){
             var audio = document.createElement('audio');
             audio.setAttribute("autoplay","true");
@@ -472,16 +471,6 @@
             audio.innerHTML = "<source src=\"assets/audio/hae.mp3\" type=\"audio/mpeg\">";
             document.body.appendChild(audio);
         }
-        $(function() {
-    $(".audio").prop("volume", 0.0);
-    $(".audio").on("timeupdate", function() {
-        if (this.currentTime < 2) {
-            $(this).stop().animate({volume: 1.0}, 1000);
-        } else if (this.currentTime > 27) {
-            $(this).stop().animate({volume: 0.0}, 1000);
-        }
-    });
-});
         
     </script>
 
